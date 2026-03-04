@@ -4,6 +4,13 @@ body {
     background-color: #f4f4f4;
 }
 
+header {
+    /* background: #333;
+    color: white;
+    padding: 10px 0; */
+    text-align: center;
+}
+
 nav {
     margin-bottom: 30px;
 }
@@ -25,3 +32,4 @@ section {
     margin-bottom: 20px;
     border-radius: 8px;
 }
+
