@@ -5,25 +5,9 @@ body {
 }
 
 header {
-    /* background: #333;
-    color: white;
-    padding: 10px 0; */
+    background: rgb(230, 223, 223);
+    padding: 10px 0;
     text-align: center;
-}
-
-nav {
-    margin-bottom: 30px;
-}
-
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-h1 {
-    color: #222;
 }
 
 section {
@@ -33,3 +17,41 @@ section {
     border-radius: 8px;
 }
 
+.experience-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 90px;
+  height: auto;
+}
+
+.experience-content h3 {
+    flex: 1;
+  margin: 0;
+  font-size: 20px;
+}
+
+.meta {
+  color: #6b7280;
+  margin: 4px 0 12px 0;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.figure-image img {
+  width: 600px;
+}

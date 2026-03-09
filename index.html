@@ -10,69 +10,92 @@
 
 <header>
     <h1>Maimouna Kamara - Data Engineer</h1>
-    <p>Data | Cloud | Machine learning | Data Pipelines</p>
-    <p>Email : maimounakamara2000@gmail.com</p>
-    <p>GitHub : https://github.com/mouna-10</p>
-    <p>LinkedIn : https://www.linkedin.com/in/maimouna-kamara-667444215/</p>
+    <p>Data | Cloud | Machine learning </p>
+    <p>Email : <a href="mailto:maimounakamara2000@gmail.com">maimounakamara2000@gmail.com</a></p>
+    <p>GitHub : <a href="https://github.com/mouna-10" target="_blank">Mon profil GitHub</a></p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/maimouna-kamara-667444215" target="_blank">Mon profil LinkedIn</a></p>
 </header>
 
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="projets.html">Projects</a>
-</nav>
-
-
-<section>
-    <h2>Un peu sur moi...</h2>
+<section id="about">
     <p>
-    Ingénieure orientée données avec une expérience en gestion de projet (PMO)
-    et en environnements techniques. Intérêt particulier pour les pipelines
-    de données, l’architecture cloud et les systèmes backend.
-    </p>
-</section>
-
-<section>
-    <h2>PMO (Mise en place d’un SOC)</h2>
-    <img src="images/senum.png" alt="Logo" class="logo">
-    <p>
-    Suivi et coordination de la mise en place d’un Security Operations Center (SOC).
-    Pilotage des jalons, coordination des équipes techniques (sécurité, infrastructure),
-    suivi des livrables et gestion des parties prenantes.
-    </p>
-</section>
-
-<section>
-    <img src="images/logo_blue.webp" alt="Logo" class="logo">
-    <h2>Data Scientist - Alternance</h2>
-    <h3>Airbus Atlantic</h3>
-    <p>
-    Mise en place d'un outil de maintenance predictive afin de prevenir les pannes de machines de production. 
-    Utilisation de techniques de machine learning pour analyser les données de capteurs et identifier les tendances menant à des défaillances potentielles.
-    </p>
-</section>
-
-<section>
-    <img src="images/cetih.jpeg" alt="Logo" class="logo">
-    <h2>Data Engineer – Alternance</h2>
-    <h3>CETIH Machecoul</h3>
-    <p>
-    Migration des flux de données de SAP BODS vers Talend.
-    Inventaire détaillé des jobs existants à l’aide de fichiers Excel préremplis, qui recensaient toutes les variables, les transformations, les sources, les dépendances et les règles métiers.
-    Secteurs fonctionnels comme la RH, la comptabilité et la logistique afin de prioriser les flux critiques.
-
-    </p>
-</section>
-
-<section>
-    <img src="images/rise.png" alt="Logo" class="logo">
-    <h2>Data Analyst - Stage</h2>
-    <h3>Research Institute of Sweden (RISE)</h3>
-    <p>
-    Creation d'un outil de visualisation interactif pour les données résultats du explainable AI.
-    </p>
+    Bonjour, je suis Maimouna Kamara, ingénieure spécialisée dans la donnée et l'intelligence artificielle.<br>
+    Vous trouverez ici quelques projets qui illustrent mon travail et mon approche de la data. </p>
 </section>
 
 
-</body>
-</html>
+<div class="experience-card">
+
+    <img src="images/airbus.avif" alt="Airbus" class="company-logo">
+
+    <div class="experience-content">
+        <h3>Détection d’anomalies sur cycles industriels – Airbus Atlantic</h3>
+        <p class="description">
+        <p>Projet de traitement et d’analyse de données industrielles visant à détecter automatiquement des anomalies dans les cycles de pose de fixation à partir de données capteurs issues d’une machine de production.</p>
+        
+        <p>
+            <strong>Objectifs du projet :</strong><br>
+            Transformer des données brutes issues de capteurs industriels en indicateurs permettant d’identifier automatiquement des cycles de production anormaux et faciliter l’analyse pour les équipes de maintenance.
+        </p>
+        <p><strong>Processus technique</strong><br>
+        <p><strong>Data pipeline</strong><br>
+        &emsp;&bull; Collecte : Extraction de séries temporelles à partir de fichiers industriels SCOP générés par la machine. <br>
+        &emsp;&bull; Nettoyage : Correction d’incohérences dans les cycles de production et filtrage des variables pertinentes.<br>
+        &emsp;&bull; Transformation et préparation des données : Segmentation des séries temporelles afin d’isoler les cycles de production, normalisation, analyse de corrélation entre variables pour sélectionner les features les plus informatives.
+
+        <p><strong>Analyse et détection d’anomalies</strong><br>
+        &emsp;&bull; méthodes statistiques basées sur des seuils, quantiles et intervalles de confiance.<br>
+        &emsp;&bull; clustering avec K-Means combiné à une ACP pour identifier les cycles atypiques.<br>
+        &emsp;&bull; utilisation de l’algorithme Isolation Forest pour la détection d’anomalies multivariées<br>
+        &emsp;&bull; implémentation d’un autoencodeur pour détecter les anomalies via l’erreur de reconstruction.</p>
+
+        <p><strong>Résultats obtenus :</strong><br>
+        Mise en place d’un pipeline de traitement permettant de passer de données machine brutes à l’identification de cycles anormaux.<br>
+        Les résultats sont visualisés via une interface Streamlit facilitant l’analyse par les équipes de maintenance.<br>
+
+        <p>Ce projet illustre ma capacité à manipuler des données brutes, appliquer des techniques avancées d’analyse et produire des résultats concrets pour améliorer les processus industriels.</p>
+        <div class="tags">
+            <span>Python</span>
+            <span>ETL</span>
+            <span>Machine Learning</span>
+            <span>Streamlit</span>
+        </div>
+
+    </div>
+    <div class="figure-image">
+        <img src="images/anomalie.png" alt="Pipeline de données industrielles">
+
+        <img src="images/reconstruction.png" alt="Dashboard de données industrielles">
+    </div>
+</div>
+
+<div class="experience-card">
+    <img src="images/cetih.jpeg" alt="Cetih" class="company-logo">
+    <div class="experience-content">
+        <h3>Migration de pipelines ETL – CETIH</h3>
+        <p class="description">
+        Projet de migration de flux d’intégration de données dans le cadre du remplacement de la plateforme ETL du groupe, passant de SAP BusinessObjects Data Services (BODS) à Talend.
+        </p>
+        <p><strong>Objectifs du projet :</strong><br>
+        Reproduire et adapter des pipelines ETL existants dans la nouvelle plateforme Talend afin de moderniser l’architecture décisionnelle.
+        </p>
+        <p><strong>Approche technique</strong><br></p>
+        &emsp;&bull; Analyse des jobs ETL existants dans SAP BODS et consultation de la documentation technique décrivant les flux de données (sources, variables, transformations et dépendances entre jobs).. <br>
+        &emsp;&bull; Reconstruction des flux dans Talend de données.<br>
+        &emsp;&bull;   Création des jobs Talend .<br>
+        &emsp;&bull; Mapping des données entre les sources et cibles.<br>
+
+        <p><strong>Résultats obtenus :</strong><br>
+        migration progressive de plusieurs pipelines d’intégration de données vers la plateforme Talend, dans différents domaines fonctionnels de l’entreprise (RH, comptabilité, logistique).
+        
+        <div class="tags">
+            <span>Talend</span>
+            <span>ETL</span>
+            <span>SQL</span>
+            <span>Data integration</span>
+        </div>
+    </div>
+
+    <div class="figure-image">
+        <img src="images/talend.png" alt="Intégration de données">
+    </div>
+</div>
